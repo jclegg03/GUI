@@ -20,6 +20,7 @@ public class Frame extends JFrame
 		this.setResizable(false);
 		this.setTitle("Awesome GUI");
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+		this.add(new Panel(app));
 		this.setVisible(true);
 	}
 }

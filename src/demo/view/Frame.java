@@ -6,21 +6,23 @@ import javax.swing.JFrame;
 public class Frame extends JFrame
 {
 	private Controller app;
+	private Panel panel;
 	
 	public Frame(Controller app)
 	{
 		super();
 		this.app = app;
+		this.panel = new Panel(app);
 		setupFrame();
 	}
 	
 	private void setupFrame()
 	{
-		this.setSize(1000, 1000);
+		this.setSize(500, 500);
 		this.setResizable(false);
 		this.setTitle("Awesome GUI");
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-		this.add(new Panel(app));
+		this.setContentPane(panel);
 		this.setVisible(true);
 	}
 }

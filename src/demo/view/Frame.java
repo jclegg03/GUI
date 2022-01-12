@@ -18,7 +18,7 @@ public class Frame extends JFrame
 	
 	private void setupFrame()
 	{
-		this.setSize(500, 500);
+		this.setSize(700, 700);
 		this.setResizable(false);
 		this.setTitle("Awesome GUI");
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);

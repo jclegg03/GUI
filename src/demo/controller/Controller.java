@@ -29,6 +29,6 @@ public class Controller
 		
 		result = (int) (Math.random() * scalar) + shift;
 		
-		return result;	
+		return result;
 	}
 }
